@@ -55,9 +55,9 @@ function App() {
       {/* <UseLayout /> */}
 
       {/* UseContext Hook */}
-      {/* <Parent>
+      <Parent>
         <ChildComponent />
-      </Parent> */}
+      </Parent>
 
       {/* Uncontrolled Components in Forms */}
       {/* <Uncontrolled /> */}
@@ -78,7 +78,7 @@ function App() {
       {/* <Formik /> */}
 
       {/* Routes */}
-      <Router>
+      {/* <Router>
         <Routes>
           <Route path="/" element={<Navigation />} />
           <Route path="/counter" element={<Counter />} />
@@ -88,7 +88,7 @@ function App() {
           <Route path="/useNavigate" element={<UseNavigate />} />
           <Route path="*" element={<Error />} />
         </Routes>
-      </Router>
+      </Router> */}
 
 
       {/* Protected Routes */}

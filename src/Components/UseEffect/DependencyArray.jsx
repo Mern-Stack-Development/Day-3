@@ -21,6 +21,7 @@ export default function DependencyArray() {
                     <p>Email: {userData.email}</p>
                     <p>Username: {userData.username}</p>
                     <p>Street: {userData.address.street}</p>
+                    <p>Lat: {userData.address.geo.lat}</p>
                 </div>
             )}
         </div>
