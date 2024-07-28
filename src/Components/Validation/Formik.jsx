@@ -14,7 +14,9 @@ export default function Formik() {
     },
     validationSchema: Yup.object({
       username: Yup.string().required('Required'),
+
       email: Yup.string().email('Invalid email address').required('Required'),
+      
       phoneNumber: Yup.string()
         .matches(/^[0-9]{10}$/, 'Enter a valid 10-digit phone number')
         .required('Required'),

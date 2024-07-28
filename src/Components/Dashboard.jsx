@@ -10,7 +10,8 @@ export default function Dashboard() {
       Dashboard Page
       <NavigationBar/>
       <nav>
-        <NavLink to="/">Dashboard</NavLink>
+        <NavLink to="dashboard">Dashboard</NavLink>
+        <br/>
         <NavLink to="about">About</NavLink>
       </nav>
       <Routes>

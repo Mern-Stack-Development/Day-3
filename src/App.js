@@ -32,6 +32,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { LoginContext } from './Components/ProtectedRoutes/LoginContext';
 import {ProtectedRoutes} from './Components/ProtectedRoutes/ProtectedRoutes';
 import Login from './Components/ProtectedRoutes/Login';
+import TodoList from "./Components/activity1.jsx";
+import { LanguageProvider } from "./Components/Activity2/LanguageContext.jsx";
+import LanguageComponent from "./Components/Activity2/LanguageComponent.jsx";
 
 function App() {
   return (
@@ -50,14 +53,21 @@ function App() {
 
       {/* <UseRef /> */}
       {/* <UseReducer /> */}
+
+      {/* <TodoList/> */}
+
       {/* <UseCallback /> */}
       {/* <UseMemo /> */}
       {/* <UseLayout /> */}
 
       {/* UseContext Hook */}
-      <Parent>
+      {/* <Parent>
         <ChildComponent />
-      </Parent>
+      </Parent> */}
+
+      {/* <LanguageProvider>
+        <LanguageComponent/>
+      </LanguageProvider> */}
 
       {/* Uncontrolled Components in Forms */}
       {/* <Uncontrolled /> */}
@@ -78,17 +88,16 @@ function App() {
       {/* <Formik /> */}
 
       {/* Routes */}
-      {/* <Router>
+      <Router>
         <Routes>
           <Route path="/" element={<Navigation />} />
           <Route path="/counter" element={<Counter />} />
           <Route path="/dashboard/*" element={<Dashboard />} />
-          <Route path="/dashboard_2/*" element={<Dashboard_2 />} />
           <Route path="/posts/:params" element={<Post />} />
           <Route path="/useNavigate" element={<UseNavigate />} />
           <Route path="*" element={<Error />} />
         </Routes>
-      </Router> */}
+      </Router>
 
 
       {/* Protected Routes */}

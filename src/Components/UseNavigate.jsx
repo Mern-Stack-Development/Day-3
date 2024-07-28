@@ -10,7 +10,7 @@ export default function UseNavigate() {
     setIsLoggedIn(true);
 
     // Navigate to another route after login
-    navigate('/counter');
+    navigate('/');
   }
 
   return (

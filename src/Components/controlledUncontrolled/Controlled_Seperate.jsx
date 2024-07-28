@@ -33,7 +33,9 @@ export default function Controlled_Seperate() {
           <input
             type="email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => {setEmail(e.target.value);
+            console.log("Email changed:", e.target.value);
+            }}
           />
         </label>
       </div>

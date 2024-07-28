@@ -53,7 +53,7 @@ export default function FormValidation() {
       <form onSubmit={handleSubmit}>
         <label>
           Username:
-          <input type="text" name="username" />
+          <input type="text" name="username" required/>
         </label>
         <br />
 

@@ -8,7 +8,7 @@ export default function Async_Validation() {
   const checkUsernameAvailability = (username) => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        if (["john", "alice", "bob"].includes(username)) {
+        if (["john", "alice", "bob", "jack"].includes(username)) {
           reject("Username is taken");
         } else {
           resolve("Username is available");
